@@ -3,5 +3,15 @@
  * de forma recursiva.
  */
 
-/* factorial(5) // 120
-factorial(0) // 1 */
+function factorial(n) {
+    let factorial = 1;
+
+    for (let i = n; i > 0; i--) {
+        factorial *= i;
+    }
+    console.log(factorial);
+    return factorial;
+}
+
+factorial(5) // 120
+factorial(0) // 1 
