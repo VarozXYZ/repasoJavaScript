@@ -20,3 +20,15 @@ comparar("murciélago", "lagartija")
 out1: murciéo
 out2: rtj
 */ 
+
+function comparar(inp1, inp2) {
+    let out1 = inp1.split("").filter(l => !inp2.includes(l))
+    let out2 = inp2.split("").filter(l => !inp1.includes(l));
+
+    console.log(out1);
+    console.log(out2);
+}
+
+
+comparar("abcd", "bcef")
+comparar("murciélago", "lagartija")
