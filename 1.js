@@ -23,6 +23,9 @@ console.log(good3)
  * @returns {string[]} An array with the unique filtered gifts
  */
 function filterGifts(gifts) {
-  // Code here
-  return []
+  return gifts.filter(gift => !gift.includes("#"))
 }
+
+const gifts1 = ['car', 'doll#arm', 'ball', '#train']
+const good1 = filterGifts(gifts1)
+console.log(good1)
